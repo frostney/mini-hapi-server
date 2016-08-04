@@ -1,6 +1,6 @@
 {
   "name": "proxy-up",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Simple Hapi-powered proxy server",
   "bin": {
     "proxy-up": "bin/index.js"
