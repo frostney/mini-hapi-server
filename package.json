@@ -1,0 +1,38 @@
+{
+  "name": "proxy-up",
+  "version": "1.0.0",
+  "description": "Simple Hapi-powered proxy server",
+  "bin": "bin/index.js",
+  "main": {
+    "proxy-up": "lib/index.js"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frostney/proxy-up.git"
+  },
+  "keywords": [
+    "hapi",
+    "proxy"
+  ],
+  "author": "Johannes Stein",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/frostney/proxy-up/issues"
+  },
+  "homepage": "https://github.com/frostney/proxy-up#readme",
+  "dependencies": {
+    "catbox-memory": "^2.0.3",
+    "h2o2": "^5.1.0",
+    "hapi": "^14.1.0",
+    "minimist": "^1.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.2.2",
+    "eslint-config-airbnb-base": "^5.0.1",
+    "eslint-plugin-import": "^1.12.0"
+  }
+}
