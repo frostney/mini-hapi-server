@@ -1,11 +1,11 @@
 {
   "name": "proxy-up",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple Hapi-powered proxy server",
-  "bin": "bin/index.js",
-  "main": {
-    "proxy-up": "lib/index.js"
+  "bin": {
+    "proxy-up": "bin/index.js"
   },
+  "main": "lib/index.js",
   "scripts": {
     "lint": "eslint .",
     "test": "echo \"Error: no test specified\" && exit 1"
