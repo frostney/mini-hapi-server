@@ -16,7 +16,9 @@
   },
   "keywords": [
     "hapi",
-    "proxy"
+    "proxy",
+    "mini",
+    "server"
   ],
   "author": "Johannes Stein",
   "license": "MIT",
