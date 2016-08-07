@@ -1,9 +1,9 @@
 {
-  "name": "proxy-up",
-  "version": "1.0.2",
-  "description": "Simple Hapi-powered proxy server",
+  "name": "mini-hapi-server",
+  "version": "1.0.0",
+  "description": "Simple configuration-based Hapi-powered server",
   "bin": {
-    "proxy-up": "bin/index.js"
+    "mini-hapi-server": "bin/index.js"
   },
   "main": "lib/index.js",
   "scripts": {
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/frostney/proxy-up.git"
+    "url": "git+https://github.com/frostney/mini-hapi-server.git"
   },
   "keywords": [
     "hapi",
@@ -21,13 +21,14 @@
   "author": "Johannes Stein",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/frostney/proxy-up/issues"
+    "url": "https://github.com/frostney/mini-hapi-server/issues"
   },
-  "homepage": "https://github.com/frostney/proxy-up#readme",
+  "homepage": "https://github.com/frostney/mini-hapi-server#readme",
   "dependencies": {
     "catbox-memory": "^2.0.3",
     "h2o2": "^5.1.0",
     "hapi": "^14.1.0",
+    "inert": "^4.0.1",
     "minimist": "^1.2.0"
   },
   "devDependencies": {

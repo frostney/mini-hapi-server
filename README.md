@@ -1,7 +1,7 @@
-# proxy-up
-Simple Hapi-powered proxy server
+# mini-hapi-server
+Minimal configuration-based Hapi-powered server. Ideal for quick prototyping, static file server or proxy server.
 
-`$ npm install proxy-up`
+`$ npm install mini-hapi-server`
 
 ## As a command-line tool
 
@@ -18,7 +18,7 @@ The `myconfig.json` file takes a Hapi configuration object:
     "host": "0.0.0.0",
     "port": 3000
   },
-  "proxy": [{
+  "routes": [{
     "method": "*",
     "path": "/{p*}",
     "handler": {
@@ -37,14 +37,14 @@ The configuration itself can either be JSON or JavaScript.
 ## Programmatic usage
 
 ```javascript
-const proxyup = require('proxyup');
+const startServer = require('mini-hapi-server');
 
-proxyup({
+startServer({
   server: {
     host: '0.0.0.0',
     port: 3000,
   },
-  proxy: [{
+  routes: [{
     method: '*',
     path: '/{p*}',
     handler: {
@@ -60,7 +60,7 @@ proxyup({
 
 ### API
 ```javascript
-proxyup(config, statusRoute = true)
+startServer(config, statusRoute = true)
 ```
 
 The function accepts a second parameter which is set to `true` by default. If set to `true`, it exports a status route on `/status` which returns `ok` by default. (This can be used an AWS ELB status check.)
